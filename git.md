@@ -1,2 +1,2 @@
 赞美世界
-世界很美
+Creating a new branch is quick & simple.
