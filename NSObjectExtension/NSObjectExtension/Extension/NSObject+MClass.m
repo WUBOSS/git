@@ -7,7 +7,25 @@
 //
 
 #import "NSObject+MClass.h"
-
+#import <objc/runtime.h>
+#import "MFoundation.h"
 @implementation NSObject (MClass)
-
++(void)m_enumerateClasses:(MClassesEnumeration)enumeration
+{
+    if(enumeration==nil)
+    {
+        return;
+    }
+    
+    BOOL stop = NO;
+    Class c = self;
+    while (c && !stop) {
+        enumeration(c,&stop);
+        c = class_getSuperclass(c);
+        
+        if([MFoundation isClassFormFoundation:c])
+            break;
+    }
+    
+}
 @end

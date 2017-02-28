@@ -14,6 +14,8 @@ typedef NSArray* (^MAllowedCodingPropertyNames)();
 typedef NSArray* (^MIgnoredPropertyNames)();
 typedef NSArray* (^MIgnoredCodingPropertyNames)();
 
-@interface NSObject (MClass)
 
+
+@interface NSObject (MClass)
++(void)m_enumerateClasses:(MClassesEnumeration)enumeration;
 @end
