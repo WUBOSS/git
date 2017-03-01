@@ -17,6 +17,7 @@
 		8D3FE7701E6577D0005F7690 /* NSObjectExtensionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FE76F1E6577D0005F7690 /* NSObjectExtensionUITests.m */; };
 		8D3FE7801E657843005F7690 /* NSObject+MClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FE77F1E657843005F7690 /* NSObject+MClass.m */; };
 		8D3FE7831E657CBB005F7690 /* MFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FE7821E657CBB005F7690 /* MFoundation.m */; };
+		8D3FE7861E666721005F7690 /* MDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3FE7851E666721005F7690 /* MDictionaryCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		8D3FE77F1E657843005F7690 /* NSObject+MClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MClass.m"; sourceTree = "<group>"; };
 		8D3FE7811E657CBB005F7690 /* MFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFoundation.h; sourceTree = "<group>"; };
 		8D3FE7821E657CBB005F7690 /* MFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFoundation.m; sourceTree = "<group>"; };
+		8D3FE7841E666721005F7690 /* MDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDictionaryCache.h; sourceTree = "<group>"; };
+		8D3FE7851E666721005F7690 /* MDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDictionaryCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 				8D3FE77F1E657843005F7690 /* NSObject+MClass.m */,
 				8D3FE7811E657CBB005F7690 /* MFoundation.h */,
 				8D3FE7821E657CBB005F7690 /* MFoundation.m */,
+				8D3FE7841E666721005F7690 /* MDictionaryCache.h */,
+				8D3FE7851E666721005F7690 /* MDictionaryCache.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 			files = (
 				8D3FE7831E657CBB005F7690 /* MFoundation.m in Sources */,
 				8D3FE7521E6577D0005F7690 /* ViewController.m in Sources */,
+				8D3FE7861E666721005F7690 /* MDictionaryCache.m in Sources */,
 				8D3FE74F1E6577D0005F7690 /* AppDelegate.m in Sources */,
 				8D3FE7801E657843005F7690 /* NSObject+MClass.m in Sources */,
 				8D3FE74C1E6577D0005F7690 /* main.m in Sources */,

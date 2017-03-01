@@ -19,5 +19,8 @@ typedef NSArray* (^MIgnoredCodingPropertyNames)();
 @interface NSObject (MClass)
 +(void)m_enumerateClasses:(MClassesEnumeration)enumeration;
 +(void)m_enumerateAllClasses:(MClassesEnumeration)enumeration;
++(void)m_setupAllowedPropertyNames:(MAllowedPropertyNames)allowedPropertyNames;
+
 +(void)m_setupIgnoredPropertyName:(MIgnoredPropertyNames)ignoredPropertyNames;
++(NSMutableArray *)m_totalAllowedPropertyNames;
 @end
