@@ -18,4 +18,6 @@ typedef NSArray* (^MIgnoredCodingPropertyNames)();
 
 @interface NSObject (MClass)
 +(void)m_enumerateClasses:(MClassesEnumeration)enumeration;
++(void)m_enumerateAllClasses:(MClassesEnumeration)enumeration;
++(void)m_setupIgnoredPropertyName:(MIgnoredPropertyNames)ignoredPropertyNames;
 @end
