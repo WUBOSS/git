@@ -12,6 +12,7 @@
 #import "MDictionaryCache.h"
 static const char MAllowedPropertyNamesKey = '\0';
 static const char MIgnoredPropertyName ='\0';
+static const char MIgnoredPropertyNamesKey = '\0';
 @implementation NSObject (MClass)
 +(void)m_enumerateClasses:(MClassesEnumeration)enumeration
 {
@@ -64,6 +65,11 @@ static const char MIgnoredPropertyName ='\0';
     return [self m_totalObjectsWithSelector:@selector(m_allowedPropertyNames) key:&MAllowedPropertyNamesKey];
 }
 
++(NSMutableArray *)m_totalIgnoredPropertyNames
+{
+    return [self m_totalObjectsWithSelector:@selector(m_ignoredPropertyNames) key:&MIgnoredPropertyNamesKey];
+
+}
 +(NSMutableArray*)m_totalObjectsWithSelector:(SEL)selector key:(const char*)key
 {
     NSMutableArray *array=[MDictionaryCache objectForKey:NSStringFromClass(self) forDictId:key];

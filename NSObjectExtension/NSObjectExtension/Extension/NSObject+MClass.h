@@ -23,4 +23,5 @@ typedef NSArray* (^MIgnoredCodingPropertyNames)();
 
 +(void)m_setupIgnoredPropertyName:(MIgnoredPropertyNames)ignoredPropertyNames;
 +(NSMutableArray *)m_totalAllowedPropertyNames;
++ (NSMutableArray *)m_totalIgnoredPropertyNames;
 @end
