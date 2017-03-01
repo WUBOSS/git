@@ -46,6 +46,6 @@
 }
 +(void)m_setupIgnoredPropertyName:(MIgnoredPropertyNames)ignoredPropertyNames
 {
-    
+    //
 }
 @end
